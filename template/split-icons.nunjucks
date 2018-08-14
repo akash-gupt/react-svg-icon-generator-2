@@ -3,7 +3,7 @@
 import React from 'react';
 
 {%- for icon in icons %}
-import { Icon{{icon.capitalizeName}} } from './icons/{{icon.name}}-icon';
+import { Icon{{icon.capitalizeName}} } from './icons/{{icon.capitalizeName}}Icon';
 {%- endfor %}
 
 const iconList = [
