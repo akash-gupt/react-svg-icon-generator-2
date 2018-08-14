@@ -1,5 +1,5 @@
 {
-  "name": "react-svg-icon-generator-ts-2",
+  "name": "@heathmont/sportsbet-react-svg-icon-generator-ts-2",
   "version": "0.0.0",
   "description": "Generate React Icon Component from SVG icons to show, resize and recolor them.",
   "main": "src/index.js",
@@ -17,7 +17,8 @@
     "svg",
     "icon"
   ],
-  "author": "Blueberry, Ondrej Bartas",
+  "author": "Michael Pautov",
+  "public": "true",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelpautov/react-svg-icon-generator-2/issues"
