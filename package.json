@@ -1,6 +1,6 @@
 {
-  "name": "react-svg-icon-generator-ts",
-  "version": "0.0.2",
+  "name": "react-svg-icon-generator-ts-2",
+  "version": "0.0.0",
   "description": "Generate React Icon Component from SVG icons to show, resize and recolor them.",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peeter-tomberg/react-svg-icon-generator.git"
+    "url": "https://github.com/michaelpautov/react-svg-icon-generator-2"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "Blueberry, Ondrej Bartas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peeter-tomberg/react-svg-icon-generator/issues"
+    "url": "https://github.com/michaelpautov/react-svg-icon-generator-2/issues"
   },
-  "homepage": "https://github.com/peeter-tomberg/react-svg-icon-generator",
+  "homepage": "https://github.com/michaelpautov/react-svg-icon-generator-2",
   "devDependencies": {
     "escope": "^3.6.0",
     "eslint": "^3.6",
