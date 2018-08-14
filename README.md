@@ -13,14 +13,14 @@ This codebase is built on node v6: https://nodejs.org/en/blog/release/v6.9.0/
 You need to add this just to development, because it will generate self contained React component directly to your codebase.
 
 ```bash
-npm install --save-dev react-svg-icon-generator-ts-2
+npm install --save-dev @heathmont/sportsbet-react-svg-icon-generator-ts-2
 ```
 
 ## Setup a node file
 
 ### Default mode
 ```js
-const generator = require('react-svg-icon-generator-ts-2');
+const generator = require('@heathmont/sportsbet-react-svg-icon-generator-ts-2');
 const config = {
     svgDir: './src/ui/icons/',
     destination: './src/components/ui/Icon.tsx'
@@ -31,7 +31,7 @@ generator(config);
 ### Split mode
 
 ```js
-const generator = require('react-svg-icon-generator-ts-2');
+const generator = require('@heathmont/sportsbet-react-svg-icon-generator-ts-2');
 const config = {
     svgDir: './src/ui/icons/',
     mode: 'split',
