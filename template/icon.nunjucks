@@ -3,7 +3,7 @@
 export type AppIconName = 
     {%- for icon in icons %}
     '{{icon.name}}'|
-    {%- endfor %}
+    {%- endfor %};
 
 
 export type AppIconProps = {
