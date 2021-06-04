@@ -1,5 +1,3 @@
-// {{comment}}
-
 export type AppIconName = 
     {%- for icon in icons %}
     '{{icon.name}}'|
