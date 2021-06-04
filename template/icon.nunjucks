@@ -10,7 +10,7 @@ export type AppIconProps = {
     color?: string;
     className?: string;
     height?: number;
-    kind?: string;
+    name: AppIconName;
     onClick?: () => void;
     preview?: boolean;
     size?: number;
@@ -38,7 +38,7 @@ const AppIcon = (props: AppIconProps) => {
       const renderPreviewKind = (name: AppIconName) => {
     return (
       <div key={name}>
-        <h3>&lt;Icon kind="{name}" /&gt;</h3>
+        <h3>&lt;Icon name="{name}" /&gt;</h3>
         {renderIcon(name)}
       </div>
     );
@@ -46,7 +46,7 @@ const AppIcon = (props: AppIconProps) => {
   
 
   const getIcon = (name: AppIconName) => {
-        const { color, height, onClick, size, style, width, className } = this.props;
+        const { color, height, onClick, size, style, width, className } = props;
 
         switch (name) {
             {% for icon in icons -%}
