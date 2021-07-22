@@ -1,0 +1,23 @@
+{
+  "name": "pocketle-admin-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "npm run build && serve -s build",
+    "checkTs": "tsc --noEmit",
+    "eslint": "eslint --ext js,ts,tsx",
+    "lint": "npm run eslint src",
+    "lint:fix": "npm run eslint --fix src",
+    "lint:css": "stylelint src/**/*.css",
+    "prettify": "prettier --write src",
+    "deploy": "npm run build && netlify deploy --prod",
+    "generate-icon": "node icon-generator.js"
+  },
+  "devDependencies": {
+    "react-svg-icon-generator-v2": "0.0.2"
+  }
+}
