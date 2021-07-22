@@ -13,14 +13,14 @@ This codebase is built on node v6: https://nodejs.org/en/blog/release/v6.9.0/
 You need to add this just to development, because it will generate self contained React component directly to your codebase.
 
 ```bash
-npm install --save-dev @heathmont/sportsbet-react-svg-icon-generator-ts-2
+npm install --save-dev react-svg-icon-generator-v2
 ```
 
 ## Setup a node file
 
 ### Default mode
 ```js
-const generator = require('@heathmont/sportsbet-react-svg-icon-generator-ts-2');
+const generator = require('react-svg-icon-generator-v2');
 const config = {
     svgDir: './src/ui/icons/',
     destination: './src/components/ui/Icon.tsx'
@@ -31,7 +31,7 @@ generator(config);
 ### Split mode
 
 ```js
-const generator = require('@heathmont/sportsbet-react-svg-icon-generator-ts-2');
+const generator = require('react-svg-icon-generator-v2');
 const config = {
     svgDir: './src/ui/icons/',
     mode: 'split',
@@ -54,26 +54,26 @@ run it by `gulp icon`
 
 ```js
 import React, {Component} from 'react';
-import Icon from './Icon';
+import AppIcon from './AppIcon';
 
 export default class App extends Component {
   render() {
     return (
       <div>
         Simple possible usage
-        <Icon kind='clock' />
+        <AppIcon name='clock' />
 
         Setup color and bounding width and height
-        <Icon kind='close' color='#748' width={500} height={100} />
+        <AppIcon name='close' color='#748' width={500} height={100} />
 
         Setup color and bounding width and height to size (square)
-        <Icon kind='close' color='red' size={600} />
+        <AppIcon name='close' color='red' size={600} />
 
         Setup onClick behavior
-        <Icon kind='close' onClick={() => alert('clicked on icon')} />
+        <AppIcon name='close' onClick={() => alert('clicked on icon')} />
 
         Show all icons at once with description (for finding right icon)
-        <Icon preview />
+        <AppIcon preview />
       </div>
     );
   }
@@ -82,4 +82,4 @@ export default class App extends Component {
 
 ## Thanks
 
-This package was build upon [react-svg-icon-generator](https://github.com/blueberryapps/react-svg-icon-generator)
+This package was build upon [react-svg-icon-generator-v2](https://github.com/blueberryapps/react-svg-icon-generator-v2)
