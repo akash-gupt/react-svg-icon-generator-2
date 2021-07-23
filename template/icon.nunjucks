@@ -60,4 +60,8 @@ const AppIcon = (props: AppIconProps) => {
      return preview ? renderPreview() : renderIcon(name);
 }
 
+AppIcon.defaultProps = {
+  size: 16,
+};
+
 export default AppIcon;
