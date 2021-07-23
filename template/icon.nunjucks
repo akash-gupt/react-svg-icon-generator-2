@@ -1,6 +1,7 @@
 export type AppIconName = 
     {%- for icon in icons %}
-    '{{icon.name}}'|
+    '{{icon.name}}'
+    {% if loop.index !== icons.length %} | {% endif %}
     {%- endfor %};
 
 
